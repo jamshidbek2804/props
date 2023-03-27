@@ -1,38 +1,124 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+h1 {
+  color: darkolivegreen;
+}
+
+h2 {
+  color: cadetblue;
+}
+
+h3 {
+  color: darkolivegreen;
+  padding: 10px 0;
+}
+
+p {
+  font-style: italic;
+  font-size: 20px;
+  color: red;
+}
+
+.header {
+  background-color: darkorange;
+  padding: 35px 0px;
+  border-radius: 5px;
+}
+
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.main-info, .main-right {
+  width: 100%;
+}
+
+.main-header {
+  background-color: darkorange;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-article {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-footer {
+  background-color: darksalmon;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
+  background-color: fuchsia;
+  width: 180px;
+  height: 560px;
+  padding: 20px 0px;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+}
+
+.nav-title {
+  margin: 0 auto;
+  rotate: 270deg;
+}
+
+.main {
+  margin: 10px auto;
+}
+
+.main-component {
+  background-color: aqua;
+  padding: 5px;
+  border-radius: 5px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  gap: 5px;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.main-component-2 {
+	margin: 10px auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-figure {
+  padding: 20px 0;
+  background-color: chartreuse;
+  display: grid;
+  place-items: center;
+}
+
+.footer {
+  background-color: darksalmon;
+  padding: 35px 0px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.minute-form, .second-form {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+input {
+	outline: none;
 }

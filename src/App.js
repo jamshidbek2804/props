@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  state = {
+    header: "<header>",
+    nav: "<nav>",
+    article: "<article>",
+    figure: "<figure>",
+    figcaption: "<figcaption>",
+    footer: "<footer>",
+  };
+  render() {
+    const { header, nav, article, figure, figcaption, footer } = this.state;
+    return (
+      <div className="container mt-3">
+        <div className="header">
+          <Header header={header} />
+        </div>
+        <div className="main">
+          <Main
+            header={header}
+            nav={nav}
+            article={article}
+            figure={figure}
+            figcaption={figcaption}
+            footer={footer}
+          />
+        </div>
+        <div>
+          <Footer footer={footer} />
+        </div>
+      </div>
+    );
+  }
 }
-
-export default App;
